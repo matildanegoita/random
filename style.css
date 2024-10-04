@@ -6,16 +6,17 @@ body, html {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 600px; 
     margin: 50px auto;
     padding: 20px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 h1 {
+    margin-bottom: 20px;
     color: #333;
 }
 
@@ -36,7 +37,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: pink;
     color: #fff;
     font-size: 1rem;
     transition: background-color 0.3s;
@@ -48,7 +49,7 @@ button:disabled {
 }
 
 button:hover:not(:disabled) {
-    background-color: #0056b3;
+    background-color: rgb(238, 151, 166);
 }
 
 .participants-list {
@@ -62,7 +63,7 @@ button:hover:not(:disabled) {
 }
 
 .participants-list li {
-    background: #007bff;
+    background: rgb(239, 200, 206);
     color: #fff;
     padding: 10px;
     margin: 5px 0;
@@ -71,10 +72,10 @@ button:hover:not(:disabled) {
 
 .winner-display {
     margin-top: 30px;
-    background: #e0e0e0;
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
 
 .winner-display h3 {
@@ -84,5 +85,62 @@ button:hover:not(:disabled) {
 
 .winner-display p {
     font-size: 1.5rem;
-    color: #007bff;
+    color: pink;
+}
+
+.choose-winner{
+    background-color: pink;
+    margin-top:20px;
+}
+
+.choose-winner:disabled{
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.choose-winner:hover:not(:disabled){
+    background-color:rgb(238, 151, 166) ;
+}
+
+
+/* Media Queries pentru ecrane mici (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; 
+    }
+
+    input[type="text"] {
+        width: 100%; 
+        margin: 0 0 10px 0; 
+    }
+
+    button {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .choose-winner{
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .participants-list{
+        text-align:center;
+    }
+}
+
+/* Media Queries pentru ecrane foarte mici (max-width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    .winner-display p {
+        font-size: 1.2rem; 
+    }
+
+    .participants-list li {
+        padding: 8px; 
+        font-size: 0.9rem; 
+    }
 }
