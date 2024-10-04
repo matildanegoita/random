@@ -1,0 +1,88 @@
+body, html {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.participants-list {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.participants-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.participants-list li {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.winner-display {
+    margin-top: 30px;
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.winner-display h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.winner-display p {
+    font-size: 1.5rem;
+    color: #007bff;
+}
