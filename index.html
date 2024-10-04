@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Plătește Nota?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cine Plătește Nota?</h1>
+
+        <div class="input-section">
+            <input type="text" id="participant-input" placeholder="Introdu numele participantului">
+            <button id="add-participant">Adaugă Participant</button>
+        </div>
+
+        <div class="participants-list">
+            <h3>Participanți:</h3>
+            <ul id="participant-list"></ul>
+        </div>
+
+        <button id="choose-winner" class="choose-winner" disabled>Alege Cine Plătește!</button>
+
+        <div class="winner-display">
+            <h3>Câștigător:</h3>
+            <p id="winner-name">Niciun participant adăugat...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
